@@ -179,14 +179,12 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    /* --- EXPANSÃO SUAVE DO RESUMO --------------------------------------- */
     const btn      = document.getElementById('toggleResumo');
     const conteudo = document.getElementById('resumoSara');
-    const collapsedHeight = 80;                // mesma altura definida no CSS
+    const collapsedHeight = 80;               
     let   isExpanded       = false;
 
     if (btn && conteudo) {
-      // garante a altura inicial
       conteudo.style.height = collapsedHeight + 'px';
 
       btn.addEventListener('click', () => {
@@ -203,7 +201,7 @@
       });
     }
 
-    /* --- INTEGRAÇÃO COM SWIFTYPE --------------------------------------- */
+    /* --- INTEGRAÇÃO COM SWIFTYPE ----- */
     $(document).on('st:query', () => {
       mostrarLoader();
     });
@@ -241,7 +239,7 @@
     });
   });
 
-  /* --- FUNÇÕES DE CONTROLE DO LOADER ------------------------------------ */
+  /* --- FUNÇÕES DE CONTROLE DO LOADER ------- */
   function mostrarLoader() {
     document.getElementById('loader').style.display = 'block';
   }
