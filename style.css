@@ -479,7 +479,6 @@ a.home:active {
   height: 80px;
 }
 
-/* Botão de expansão */
 .btn-expandir {
   background: none;
   border: none;
@@ -576,7 +575,6 @@ a.home:active {
 }
 
 
-/* Contêiner do paginador */
 
 .st-page-wrapper {
   display: flex;
@@ -655,7 +653,6 @@ a.home:active {
 
 /* RESPONSIVIDADE GERAL */
 
-/* Ajusta layout dos cards Resumo e Artigos */
 @media (max-width: 768px) {
   .container-boxes {
     flex-direction: column;
@@ -713,7 +710,6 @@ a.home:active {
   }
 }
 
-/* Responsivo para smartphones menores */
 @media (max-width: 480px) {
   .search-input-wrapper {
     padding: 0 10px;
